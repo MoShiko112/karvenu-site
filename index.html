@@ -1,3 +1,4 @@
+<!-- File: index.html -->
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -6,7 +7,9 @@
   <title>קרבנו לעבודתך</title>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -14,7 +17,7 @@
       <a href="index.html" class="logo">קרבנו לעבודתך</a>
       <nav class="site-nav">
         <ul>
-          <li><a href="index.html">בית</a></li>
+          <li><a href="index.html" class="active">בית</a></li>
           <li><a href="about.html">אודות</a></li>
           <li><a href="donate.html">תרומה</a></li>
           <li><a href="contact.html">יצירת קשר</a></li>
@@ -25,44 +28,142 @@
       </button>
     </div>
   </header>
+
   <main>
-    <section class="hero">
-      <div class="container">
-        <h1>ברוכים הבאים לקרבנו לעבודתך</h1>
-        <p>בראשותו של הרב רפאל זר</p>
-        <a href="donate.html" class="btn">תרמו עכשיו</a>
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+      <div class="slide active" style="background-image:url('assets/images/slide1.jpg')">
+        <div class="slide-content">
+          <h1>ברוכים הבאים לקרבנו לעבודתך</h1>
+          <p>בראשותו של הרב רפאל זר</p>
+          <a href="donate.html" class="btn">תרמו עכשיו</a>
+        </div>
       </div>
+      <div class="slide" style="background-image:url('assets/images/slide2.jpg')">
+        <div class="slide-content">
+          <h1>שיעורי תורה חיים</h1>
+          <p>מפגש אינטימי עם הרב</p>
+          <a href="about.html" class="btn">למידע נוסף</a>
+        </div>
+      </div>
+      <button class="prev">&lt;</button>
+      <button class="next">&gt;</button>
     </section>
+
+    <!-- About -->
     <section class="about">
       <div class="container">
         <h2>מי אנחנו?</h2>
         <p>
-          "קרבנו לעבודתך" הוא מוסד תורני המוקדש לתמיכה ולסיוע בקירוב יהודים לתורה ולמצוות,
-          להעצמת הקהילה ולהגברת זיכוי הרבים. פעילויותינו כוללות שיעורי תורה, אירועים קהילתיים, ותמיכה משפחתית.
+          "קרבנו לעבודתך" הוא מוסד תורני המוקדש לתמיכה בקירוב לבבות דרך לימוד והפצת תורה,
+          אירועים קהילתיים ותמיכה משפחתית.
         </p>
       </div>
     </section>
-    <section class="mission">
+
+    <!-- Activities -->
+    <section class="activities">
       <div class="container">
-        <h2>החזון שלנו</h2>
-        <p>
-          להביא לכל יהודי חוויה חמה ומשמעותית שתקרב אותו לעבודת השם,
-          וליצור רשת תמיכה קהילתית חזקה ומאוחדת.
-        </p>
+        <h2>תחומי פעילות</h2>
+        <div class="grid">
+          <div class="card">
+            <img src="assets/images/icon1.svg" alt="">
+            <h3>שיעורי תורה</h3>
+          </div>
+          <div class="card">
+            <img src="assets/images/icon2.svg" alt="">
+            <h3>אירועים</h3>
+          </div>
+          <div class="card">
+            <img src="assets/images/icon3.svg" alt="">
+            <h3>סיוע למשפחות</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events">
+      <div class="container">
+        <h2>אירועים קרובים</h2>
+        <div class="grid">
+          <div class="card event">
+            <img src="assets/images/event1.jpg" alt="">
+            <h3>ערב לימוד בגוש עציון</h3>
+            <p>15 באב תשפ"ה</p>
+          </div>
+          <div class="card event">
+            <img src="assets/images/event2.jpg" alt="">
+            <h3>סמינר חסדים</h3>
+            <p>כ"ח אלול תשפ"ה</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container">
+        <h2>גלריה</h2>
+        <div class="masonry">
+          <img src="assets/images/gallery1.jpg" alt="">
+          <img src="assets/images/gallery2.jpg" alt="">
+          <img src="assets/images/gallery3.jpg" alt="">
+          <img src="assets/images/gallery4.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Donate CTA -->
+    <section class="donate-cta">
+      <div class="container">
+        <h2>הצטרפו למעגל התורמים</h2>
+        <p>תרומתכם מאפשרת לנו להמשיך ולפעול למען קירוב לבבות.</p>
+        <a href="donate.html" class="btn">תרמו עכשיו</a>
       </div>
     </section>
   </main>
+
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2025 קרבנו לעבודתך. כל הזכויות שמורות.</p>
+      <div class="footer-grid">
+        <div>
+          <h4>ניווט מהיר</h4>
+          <ul>
+            <li><a href="index.html">בית</a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li><a href="donate.html">תרומה</a></li>
+            <li><a href="contact.html">יצירת קשר</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>צרו קשר</h4>
+          <p>טל': 050-9091520</p>
+          <p>אימייל: info@karvenu.co.il</p>
+        </div>
+      </div>
+      <p class="copy">&copy; 2025 קרבנו לעבודתך. כל הזכויות שמורות.</p>
     </div>
   </footer>
+
   <script>
+    // Slider
+    const slides = document.querySelectorAll('.hero-slider .slide');
+    let current = 0;
+    document.querySelector('.next').onclick = () => {
+      slides[current].classList.remove('active');
+      current = (current+1)%slides.length;
+      slides[current].classList.add('active');
+    };
+    document.querySelector('.prev').onclick = () => {
+      slides[current].classList.remove('active');
+      current = (current-1+slides.length)%slides.length;
+      slides[current].classList.add('active');
+    };
+    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.site-nav');
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('nav-open');
-    });
+    toggle.addEventListener('click', ()=> nav.classList.toggle('nav-open'));
   </script>
 </body>
 </html>
